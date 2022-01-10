@@ -10,7 +10,7 @@ export = sys.argv[2]
 
 jlist = []
 ads = []
-for line in open(file_path, 'r'):
+for line in open(file_path, 'rt', encoding='UTF8'):
     jlist.append(json.loads(line))
 
 for i in range(len(jlist)):
